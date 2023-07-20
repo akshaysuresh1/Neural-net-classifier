@@ -25,11 +25,11 @@ Here, we experiment with multiple toy convolutional neural network (CNN) models 
 
 ## Methodology <a name="methods"></a>
 As a first pass, we defined the following 5 classes for our signal classification task.
-* `llnb`: Long-lived narrowband interference
-* `slnb`: Short-lived narrowband interference
-* `llbb`: Long-lived broadband interference
-* `slbb`: Short-lived broadband interference
-* `noise`: Background Gaussian white noise
+* `llnb`: Long-lived narrowband interference + background noise
+* `slnb`: Short-lived narrowband interference + background noise
+* `llbb`: Long-lived broadband interference + background noise
+* `slbb`: Short-lived broadband interference + background noise
+* `noise`: Background noise only
 
 Simulated frequency-time diagrams of the first 4 signal classes are presented below. Slide credit: Ryan J. Hill
 ![Inteference signal morphologies](https://github.com/akshaysuresh1/RFI-classifier/blob/master/img/signal_classes.png?raw=True)
