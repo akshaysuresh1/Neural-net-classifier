@@ -5,7 +5,7 @@ A PyTorch implmentation of a supervised machine learning model to classify diffe
 **Project report:** [PDF](https://github.com/akshaysuresh1/RFI-classifier/blob/master/RFI_classifier.pdf)
 
 **Contributors:**
-* [Akshay Suresh](https://www.linkedin.com/in/akshaysureshas1) (mentor)
+* [Akshay Suresh](https://www.linkedin.com/in/akshaysureshas1) (mentor, project lead)
 * [Ryan J. Hill](https://www.linkedin.com/in/ryan-james-hill) (Cornell University undergraduate research intern, Fall 2019)
 * [Ethan S. Bair](https://blogs.bu.edu/esb265) (Cornell University undergraduate research intern, Fall 2019)
 
@@ -30,11 +30,14 @@ As a first pass, we defined the following four classes for our signal classifica
 * `llbb`: Long-lived broadband interference
 * `slbb`: Short-lived broadband interference
 
-Simulated frequency-time diagrams of the above signal classes are presented below.
+Simulated frequency-time diagrams of the above signal classes are presented below. Slide credit: Ryan J. Hill
+![Inteference signal morphologies](https://github.com/akshaysuresh1/RFI-classifier/blob/master/img/signal_classes.png?raw=True)
 
 **NOTE**: In our study, we generated simulated data to ensure that our training and validation data are balanced across all classes. This choice allows us to evaluate model performance using the accuracy metric. Refer to the Appendix of our project report for the full confusion matrices obtained with different CNN models.
 
 ## Takeaways <a name="results"></a>
+Figure credit: Ethan S. Bair
+![Model accuract comparison](https://github.com/akshaysuresh1/RFI-classifier/blob/master/img/accuracy_6to10.png?raw=True)
 Trialing CNNs of different depths, we observe a growth in network accuracy across all signal classes with increasing model depth. However, the incremental gain in network accuracy diminishes with every added layer. Setting a 95% accuracy threshold, the above plot suggests that an 8/9-layer CNN model would be adequate for our classification problem.
 
 ## Areas for Improvement <a name="futurework"></a>
