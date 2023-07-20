@@ -24,13 +24,14 @@ Interference signals from human technologies frequently compound searches for ex
 Here, we experiment with multiple toy convolutional neural network (CNN) models to distinguish between various morphologies of interference signals in radio telescope data. 
 
 ## Methodology <a name="methods"></a>
-As a first pass, we defined the following four classes for our signal classification task.
+As a first pass, we defined the following 5 classes for our signal classification task.
 * `llnb`: Long-lived narrowband interference
 * `slnb`: Short-lived narrowband interference
 * `llbb`: Long-lived broadband interference
 * `slbb`: Short-lived broadband interference
+* `noise`: Background Gaussian white noise
 
-Simulated frequency-time diagrams of the above signal classes are presented below. Slide credit: Ryan J. Hill
+Simulated frequency-time diagrams of the first 4 signal classes are presented below. Slide credit: Ryan J. Hill
 ![Inteference signal morphologies](https://github.com/akshaysuresh1/RFI-classifier/blob/master/img/signal_classes.png?raw=True)
 
 **NOTE**: In our study, we generated simulated data to ensure that our training and validation data are balanced across all classes. This choice allows us to evaluate model performance using the accuracy metric. Refer to the Appendix of our project report for the full confusion matrices obtained with different CNN models.
