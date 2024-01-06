@@ -1,6 +1,6 @@
 # RFI-classifier
 
-A PyTorch implmentation of a supervised machine learning model to classify different morphologies of interference signals in radio telescope data.
+A PyTorch implementation of a supervised machine learning model to classify different morphologies of interference signals in radio telescope data.
 
 **Project report:** [PDF](https://github.com/akshaysuresh1/RFI-classifier/blob/master/RFI_classifier.pdf)
 
