@@ -43,8 +43,8 @@ Trialing CNNs of different depths, we observe a growth in network accuracy acros
 
 ## Areas for Improvement <a name="futurework"></a>
 1. Our definition of interference signal classes is overly simplistic and needs refinement based on inputs from real-world radio telescope data.
-2. Models do not account for scenarios where multiple signal classes are present in a single frequency-time snippet. For instance, what if an astrophysical signal of interest overlaps in time with a weak interference signal? Can we tweak our models to discern weak signals buried amidst a haystack of noise and interference?
-   * Perhaps multi-class classification would be worth an exercise.
+2. Models do not account for scenarios where multiple signal classes are present in a single frequency-time snippet. For instance, what if an astrophysical signal of interest overlaps in time with two bright interference signals of different bandwidths?
+   * Perhaps multilabel classification is worth an exercise.
    * Alternatively, we can take a look at image segmentation problems.
 
 ## Troubleshooting and Feedback <a name="troubleshooting"></a>
